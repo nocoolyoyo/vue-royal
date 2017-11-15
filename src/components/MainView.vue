@@ -19,5 +19,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import "static/modules/commonSCSS/variables.scss";
+  @import "static/modules/commonSCSS/mixins.scss";
+
+  main {
+    height: 100%;
+    width: 100%;
+    background-color: $c-milka;
+
+    $height_slidesMenu: 40px;
+    .slides-menu {
+      height:$height_slidesMenu;
+      background-color: white;
+      width: 100%;
+    }
+
+  }
 
 </style>

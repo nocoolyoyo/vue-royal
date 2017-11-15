@@ -2,28 +2,39 @@
 <template>
 
   <nav class="headbar navbar navbar-light">
-    <a class="btn btn-primary " href="#">
-      <i class="fa fa-bars"></i>
+    <a class="btn btn-primary btn-icon-fix" href="#">
+      <icon name="bars" scale="1"></icon>
     </a>
     <form class="form-inline">
-      <div class="input-group">
-        <span class="input-group-addon" id="basic-addon1">@</span>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-      </div>
+      <input type="text" class="form-control" placeholder="搜索" aria-label="搜索" aria-describedby="basic-addon1">
     </form>
 
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        苏丹的复仇
+      </button>
+      <div class="dropdown-menu dropdown-menu-right">
+        <button class="dropdown-item" type="button">Action</button>
+        <button class="dropdown-item" type="button">Another action</button>
+        <button class="dropdown-item" type="button">Something else here</button>
+      </div>
+    </div>
   </nav>
 
 </template>
 
 <script>
-export default {
-  name: 'Headbar',
-  data() {
-    return {
-    };
-  },
-};
+  import 'vue-awesome/icons/bars'
+  import Icon from 'vue-awesome/components/Icon'
+
+  export default {
+    name: 'Headbar',
+    components: { Icon },
+    data() {
+      return {
+      };
+    },
+  };
 </script>
 
 <style lang="scss" scoped>

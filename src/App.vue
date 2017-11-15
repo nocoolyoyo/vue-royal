@@ -47,4 +47,12 @@
       flex: 1;
     }
   }
+
+
+  //修正font-awsome VUE组件样式偏移
+  .btn-icon-fix {
+    .fa-icon {
+      margin-bottom: -2px;
+    }
+  }
 </style>
